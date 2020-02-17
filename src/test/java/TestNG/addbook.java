@@ -14,7 +14,7 @@ public class addbook {
 	  	public void launch() {
 	  		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 	  		  driver = new ChromeDriver();
-	  		  driver.get("http://35.154.81.187:32768/addressbook/");
+	  		  driver.get("http://3.94.210.45:8080/addressbook/");
 	  		  driver.manage().window().maximize();
 	  		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	  	}
@@ -22,11 +22,11 @@ public class addbook {
 	    @Test
 	    public void verifyaddbook() {
 	  	  driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
-	  	  driver.findElement(By.id("gwt-uid-5")).sendKeys("Edureka");
-	  	  driver.findElement(By.id("gwt-uid-7")).sendKeys("Selenium");
+	  	  driver.findElement(By.id("gwt-uid-5")).sendKeys("Naresh");
+	  	  driver.findElement(By.id("gwt-uid-7")).sendKeys("Sharma");
 	  	  driver.findElement(By.id("gwt-uid-9")).sendKeys("9876543210");
-	  	  driver.findElement(By.id("gwt-uid-11")).sendKeys("devops@gmail.com");
-	  	  driver.findElement(By.id("gwt-uid-13")).sendKeys("06/11/1986");
+	  	  driver.findElement(By.id("gwt-uid-11")).sendKeys("abcd@gmail.com");
+	  	  driver.findElement(By.id("gwt-uid-13")).sendKeys("06/05/1975");
 	  	  driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
 	    }
 	    
